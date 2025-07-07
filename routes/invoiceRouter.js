@@ -1,9 +1,8 @@
 const express = require('express');
 
 const productModel = require('../models/productModel');
-const { authMiddleware, authorizeRoles } = require('../middlewares/authMiddleware');
-const invoiceModel = require('../models/invoicemodel');
-
+const { authMiddleware, authorizeRoles } = require('../middlewares/authMiddleware');;
+const invoiceModel = require('../models/invoiceModel');
 const invoiceRouter = express.Router();
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('../config/swaggerConfig');
